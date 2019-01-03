@@ -1,121 +1,216 @@
 <!DOCTYPE HTML>
-	<head>
-		<title> Prakhar's Blog </title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script type="text/javascript" src="demo.js"></script>
-	</head>
+<head>
+	<title> Prakhar's Blog </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<script type="text/javascript" src="JS/demo.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Raleway|Major Mono Display|Libre Baskerville|ZCOOL KuaiLe">
+</head>
 
-	<body>
+<body>
 
-		<header>
-			<h1>
-				WELCOME TO MY WEBSITE!...
-			</h1>
-			<h3>
-				<small>...or basically a blog which provides no useful information related to possibly anything in this world except me.</small>
-			</h3>
-			
-		</header>
+	<header>
+		<h2>
+			<div id="cl" onclick="f1()"></div>
+			<div id="tro" onclick="f2()"></div>
+		</h2>
+
+		<style>
+		#cl,#tro{
+			font-family:'Orbitron';
+			color:white;
+			text-align:center;
+			text-shadow:rgba(0,128,255,1) -1px -2px 0.5em;
+		}
+
+		button{
+			background-color:transparent;
+			border-color:transparent;
+		}
+	</style>
+
+	<script>
+		var a=document.getElementById('cl');
+		var t=document.getElementById('tro');
+		        
+		window.onload=function(){
+			a.style.fontSize=((window.innerWidth/20)-100)+'px';
+			a.style.marginTop=((window.innerWidth/2000)+20)+'px';
+			t.style.fontSize=((window.innerWidth/20)-230)+'px';
+		}
+           
+        a.innerHTML="WELCOME TO MY WEBSITE!..."
+        t.innerHTML="...or basically a blog which provides no useful information related to possibly anything in this world except me."
+            
+        var th=1;
+        do{
+          	function f1(){
+          		th++;
+           		switch(th){
+           			case 2:
+           			a.style.color="red";
+           			t.style.color="red";
+           			a.style.textShadow="-1px -2px 0.5em red";
+           			t.style.textShadow="-1px -2px 0.5em red";
+           			break;
+           			case 3:
+           			a.style.color="rgb(0,110,200)";
+           			t.style.color="rgb(0,110,200)";
+           			a.style.textShadow="-1px -2px 0.5em rgb(0,110,200)";
+           			t.style.textShadow="-1px -2px 0.5em rgb(0,110,200)";
+           			break;
+           			case 4:
+           			a.style.color="green";
+           			t.style.color="green";
+           			a.style.textShadow="-1px -2px 0.5em green";
+           			t.style.textShadow="-1px -2px 0.5em green";
+           			break;
+           			case 5:
+           			a.style.color="yellow";
+           			t.style.color="yellow";
+           			a.style.textShadow="-1px -2px 0.5em yellow";
+           			t.style.textShadow="-1px -2px 0.5em yellow";
+           			break;
+           			default:
+           			a.style.color="red";
+           			t.style.color="red";
+           			a.style.textShadow="-1px -2px 0.5em red";
+           			t.style.textShadow="-1px -2px 0.5em red";
+           		}
+           		th=(th>6)?1:th;
+           	}
+        }while(f1.click>0);
+        var tk=1;
+
+        do{
+           	function f2(){
+           		tk++;
+           		switch(tk){
+           			case 2:
+           			a.style.fontFamily="Raleway";
+           			t.style.fontFamily="Raleway";
+           			break;
+           			case 3:
+            		a.style.fontFamily="Major Mono Display";
+            		t.style.fontFamily="Major Mono Display";
+            		break;
+           			case 4:
+           			a.style.fontFamily="Orbitron";
+           			t.style.fontFamily="Orbitron";
+           			break;
+           			case 5:
+           			a.style.fontFamily="Libre Baskerville";
+           			t.style.fontFamily="Libre Baskerville";
+           			break;
+           			default:
+           			a.style.fontFamily="ZCOOL KuaiLe";
+           			t.style.fontFamily="ZCOOL KuaiLe";
+           		}
+            	tk=(tk>6)?1:tk;
+           	}
+        }while(f2.click>0);
+
+    </script>
+    </header>
+
+    <nav>
+    	<p class=navbar>
+    		<a href="https://www.facebook.com/PrakharJUniyal" target="_blank">Add Me On Facebook</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp          
+    		<a href="https://www.github.com/PrakharUniyal" target="_blank">Check out my work</a>          
+    		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    		<a href="https://www.twitter.com/prakhar_uniyal" target="_blank">Follow me on Twitter</a>      
+    		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    		<a href="https://www.instagram.com/prakhar_uniyal" target="_blank">Stalk me on Instagram</a>
+    	</p>
+    </nav>
 
 
-		<nav>
-			<p class=navbar>
-				<a href="https://www.facebook.com/PrakharJUniyal" target="_blank">Add Me On Facebook</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp          
-				<a href="https://www.github.com/PrakharUniyal" target="_blank">Check out my work</a>          
-				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				<a href="https://www.twitter.com/prakhar_uniyal" target="_blank">Follow me on Twitter</a>      
-				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				<a href="https://www.instagram.com/prakhar_uniyal" target="_blank">Stalk me on Instagram</a>
-			</p>
-		</nav>
-		
+
+    <p>
+    	So I decided to make this blog cum website to just show off that I am learning Web-Development and haven't learned anything important yet except the simple HTML scripts and some CSS styling.
+    </p>
 
 
-		<p>
-			So I decided to make this blog cum website to just show off that I am learning Web-Development and haven't learned anything important yet except the simple HTML scripts and some CSS styling.
-		</p>
+    <article>
+    	<section>
+    		<img src="IMG/DP1.jpg" height="40%" width="30%" alt="" align=center>	
+    	</section>
+    	<section id="caption">
+    		<p>This is a photo of me with my friends.</p>
+    	</section>
+    </article>
 
+    <article id=favsong>
+    	My Favourite Song: <a href="https://gaana.com/song/hymn-for-the-weekend">Hymn For The Weekend</a> by Coldplay.	
+    	<section>
+    		And <a href="https://gaana.com/playlist/uniyalprakhar-zhbxy-endsems-pkl228q6wg">here</a> is the link to my playlist on Gaana.
+    	</section>
+    </article>
 
-		<article>
-			<section>
-				<img src="DP1.jpg" height="40%" width="30%" alt="" align=center>	
-			</section>
-			<section id="caption">
-				<p>This is a photo of me with my friends.</p>
-			</section>
-		</article>
+    <article id=favsong>
+    	<br>
+    	My Favourite Song's Video: <a href="https://www.youtube.com/watch?v=YykjpeuMNEk">Hymn For The Weekend</a> by Coldplay.
+    	Or maybe just watch it right here:<br><br>
+    	<iframe width="501.333" height="282" src="https://www.youtube.com/embed/YykjpeuMNEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
 
-		<article id=favsong>
-			My Favourite Song: <a href="https://gaana.com/song/hymn-for-the-weekend">Hymn For The Weekend</a> by Coldplay.	
-			<section>
-				And <a href="https://gaana.com/playlist/uniyalprakhar-zhbxy-endsems-pkl228q6wg">here</a> is the link to my playlist on Gaana.
-			</section>
-		</article>
+    <br><br>
+    <article>
+    	<strong>Something you might want to see. My grades in the courses of First semester at IIT Mandi:</strong>
+    	<br><br>
+    	<table align=center border="1" bgcolor="#0080FF">
+    		<tr>
+    			<th>S.no.</th>
+    			<th>Subject</th>
+    			<th>Credits</th>
+    			<th>Grade</th>
+    		</tr>
 
-		<article id=favsong>
-			<br>
-			My Favourite Song's Video: <a href="https://www.youtube.com/watch?v=YykjpeuMNEk">Hymn For The Weekend</a> by Coldplay.
-			Or maybe just watch it right here:<br><br>
-			<iframe width="501.333" height="282" src="https://www.youtube.com/embed/YykjpeuMNEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</article>
+    		<tr>
+    			<th>1.</th>
+    			<th>Reverse Engg.(LAB)</th>
+    			<th>2</th>
+    			<th>B</th>
+    		</tr>
 
-		<br><br>
-		<article>
-			<strong>Something you might want to see:</strong>
-			<table align=center border="1" bgcolor="#0080FF">
-				<tr>
-					<th>S.no.</th>
-					<th>Subject</th>
-					<th>Credits</th>
-					<th>Grade</th>
-				</tr>
+    		<tr>
+    			<th>2.</th>
+    			<th>Engg. Math.</th>
+    			<th>3</th>
+    			<th>B</th>
+    		</tr>
 
-				<tr>
-					<th>1.</th>
-					<th>Reverse Engg.(LAB)</th>
-					<th>2</th>
-					<th>B</th>
-				</tr>
+    		<tr>
+    			<th>3.</th>
+    			<th>Graphics for Design</th>
+    			<th>4</th>
+    			<th>O</th>
+    		</tr>
 
-				<tr>
-					<th>2.</th>
-					<th>Engg. Math.</th>
-					<th>3</th>
-					<th>B</th>
-				</tr>
+    		<tr>
+    			<th>4.</th>
+    			<th>Electrical Systems</th>
+    			<th>3</th>
+    			<th>O</th>
+    		</tr>
 
-				<tr>
-					<th>3.</th>
-					<th>Graphics for Design</th>
-					<th>4</th>
-					<th>O</th>
-				</tr>
+    		<tr>
+    			<th>5.</th>
+    			<th>Electrical Systems(LAB)</th>
+    			<th>2</th>
+    			<th>A</th>
+    		</tr>
+    	</table>
+    </article>
 
-				<tr>
-					<th>4.</th>
-					<th>Electrical Systems</th>
-					<th>3</th>
-					<th>O</th>
-				</tr>
+    <br><br>
 
-				<tr>
-					<th>5.</th>
-					<th>Electrical Systems(LAB)</th>
-					<th>2</th>
-					<th>A</th>
-				</tr>
-			</table>
-		</article>
-
-		<br><br>
-
-		<footer>
-			<p class='End'>
-			 	<b>CONTACT:</b> +91-8318631214 <br>
-			 	<b>E-Mail</b> b18128@students.iitmandi.ac.in <br>
-			 	<b>Facebook:</b> /PrakharJUniyal <br>
-			 	<b>Github:</b> /PrakharUniyal <br>
-			</p>
-		</footer>
-	</body>
+    <footer>
+    	<p class='End'>
+    		<b>CONTACT:</b> +91-8318631214 <br>
+    		<b>E-Mail</b> b18128@students.iitmandi.ac.in <br>
+    		<b>Facebook:</b> /PrakharJUniyal <br>
+    		<b>Github:</b> /PrakharUniyal <br>
+    	</p>
+    </footer>
+</body>
